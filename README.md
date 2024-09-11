@@ -10,6 +10,14 @@ The dice is rolled a number of times and the tally of high (4,5,6) and low (1,2,
 
 Similar to High/Low but the tally is of odd and even rolls.
 
+#### Prime
+
+Tests if the roll is a prime number.
+
+#### Square/Square root
+
+Tests if the roll is a square number or a square root of a number.
+
 #### Use of padding
 
 Each script has a padding feature ```pad``` which is also used to set the ```max_iter``` value to ```1 * 10**(pad-1)```.
