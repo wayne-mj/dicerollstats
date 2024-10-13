@@ -1,8 +1,5 @@
 import random
-die6 = [1, 2, 3, 4, 5, 6]
-die10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-die20 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-         11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+import common
 
 def prime(n):
     if n < 2:
@@ -20,7 +17,7 @@ def main():
     message = []
 
     for i in range(max_iter):
-        d = random.choice(die20)
+        d = random.choice(common.die20)
         if prime(d):
             yes_prime += 1
             message.append(f"{i+1:{pad}}) {d} Prime")

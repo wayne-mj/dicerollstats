@@ -1,8 +1,5 @@
 import random
-die6 = [1, 2, 3, 4, 5, 6]
-die10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-die20 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-         11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+import common
 
 # Can n be a square root?
 def can_sqrt(n):
@@ -24,7 +21,7 @@ def main():
     message = []
 
     for i in range(max_iter):
-        d = random.choice(die20)
+        d = random.choice(common.die20)
         if chksqrt:
             if can_sqrt(d):
                 is_sqrt += 1
@@ -33,7 +30,7 @@ def main():
                 isnot_sqrt += 1
                 message.append(f"{i+1:{pad}}) {d} is not a square root")
         else:
-            if can_sqr(d, die20):
+            if can_sqr(d, common.die20):
                 is_sqr += 1
                 message.append(f"{i+1:{pad}}) {d} is a square")
             else:
